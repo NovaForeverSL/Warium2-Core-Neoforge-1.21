@@ -51,6 +51,8 @@ public final class ModItems {
     public static final DeferredItem<BlockItem> RAW_BLOCK_ZINC = registerBlockItem("raw_block_zinc", ModBlocks.RAW_BLOCK_ZINC);
 
     public static final DeferredItem<BlockItem> BAUXITE = registerBlockItem("bauxite", ModBlocks.BAUXITE);
+    public static final DeferredItem<BlockItem> TRINITITE = registerBlockItem("trinitite", ModBlocks.TRINITITE);
+    
     public static final DeferredItem<BlockItem> CEMENTITE_REINFORCED = registerBlockItem("cementite_reinforced", ModBlocks.CEMENTITE_REINFORCED);
     public static final DeferredItem<BlockItem> CEMENTITE_CRACKED = registerBlockItem("cementite_cracked", ModBlocks.CEMENTITE_CRACKED);
     public static final DeferredItem<BlockItem> CEMENTITE_DAMAGED = registerBlockItem("cementite_damaged", ModBlocks.CEMENTITE_DAMAGED);
