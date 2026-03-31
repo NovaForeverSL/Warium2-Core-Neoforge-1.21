@@ -37,6 +37,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> RAW_BLOCK_ZINC = registerSimpleBlock("raw_block_zinc", Blocks.RAW_IRON_BLOCK);
 
     public static final DeferredBlock<Block> BAUXITE = registerSimpleBlock("bauxite", Blocks.IRON_ORE);
+    public static final DeferredBlock<Block> TRINITITE = registerSimpleBlock("trinitite", Blocks.GLASS);
 
     public static final DeferredBlock<Block> CEMENTITE_REINFORCED = registerSimpleBlock("cementite_reinforced", Blocks.STONE);
     public static final DeferredBlock<Block> CEMENTITE_CRACKED = registerSimpleBlock("cementite_cracked", Blocks.STONE);
