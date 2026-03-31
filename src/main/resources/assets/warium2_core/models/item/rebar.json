@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "warium2_core:item/rebar"
+    "layer0": "warium2_core:block/rebar"
   },
   "render_type": "translucent"
 }
