@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "warium2_core:block/deepslateleadore",
+    "particle": "warium2_core:block/deepslateleadore"
+  },
+  "render_type": "solid"
+}

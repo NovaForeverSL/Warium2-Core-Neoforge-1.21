@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "warium2_core:block/uranium_ore" }
+  }
+}

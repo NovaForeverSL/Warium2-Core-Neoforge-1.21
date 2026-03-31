@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_noside",
+  "textures": {
+    "particle": "warium2_core:block/rebar",
+    "pane": "warium2_core:block/rebar"
+  },
+  "render_type": "cutout_mipped"
+}

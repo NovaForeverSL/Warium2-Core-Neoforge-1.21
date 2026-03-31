@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "warium2_core:block/uraniumore",
+    "particle": "warium2_core:block/uraniumore"
+  },
+  "render_type": "solid"
+}

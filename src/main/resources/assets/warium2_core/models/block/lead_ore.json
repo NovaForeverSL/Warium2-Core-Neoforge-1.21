@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "warium2_core:block/leadore",
+    "particle": "warium2_core:block/leadore"
+  },
+  "render_type": "solid"
+}

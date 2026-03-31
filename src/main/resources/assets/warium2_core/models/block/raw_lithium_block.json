@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "warium2_core:block/rawlithiumblock",
+    "particle": "warium2_core:block/rawlithiumblock"
+  },
+  "render_type": "solid"
+}
