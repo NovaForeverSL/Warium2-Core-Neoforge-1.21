@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "warium2_core:block/nickelblock",
-    "particle": "warium2_core:block/nickelblock"
-  },
-  "render_type": "solid"
-}

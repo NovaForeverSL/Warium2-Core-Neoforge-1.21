@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "warium2_core:block/zinc_block",
-    "particle": "warium2_core:block/zinc_block"
-  },
-  "render_type": "solid"
-}

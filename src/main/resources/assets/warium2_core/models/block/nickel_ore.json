@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "warium2_core:block/niceklore",
-    "particle": "warium2_core:block/niceklore"
-  },
-  "render_type": "solid"
-}
