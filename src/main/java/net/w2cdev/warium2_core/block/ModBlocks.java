@@ -12,39 +12,38 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public final class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Warium2_Core.MODID);
 
-    public static final DeferredBlock<Block> BERYLLIUM_ORE = registerSimpleBlock("beryllium_ore", Blocks.IRON_ORE);
-    public static final DeferredBlock<Block> BERYLLIUM_BLOCK = registerSimpleBlock("beryllium_block", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> RAW_BERYLLIUM_BLOCK = registerSimpleBlock("raw_beryllium_block", Blocks.RAW_IRON_BLOCK);
+    public static final DeferredBlock<Block> ORE_BERYLLIUM = registerSimpleBlock("ore_beryllium", Blocks.IRON_ORE);
+    public static final DeferredBlock<Block> ORE_BERYLLIUM_DEEPSLATE = registerSimpleBlock("ore_beryllium_deepslate", Blocks.DEEPSLATE_IRON_ORE);
+    public static final DeferredBlock<Block> BLOCK_BERYLLIUM = registerSimpleBlock("block_beryllium", Blocks.IRON_BLOCK);
+    public static final DeferredBlock<Block> RAW_BLOCK_BERYLLIUM = registerSimpleBlock("raw_block_beryllium", Blocks.RAW_IRON_BLOCK);
 
-    public static final DeferredBlock<Block> LEAD_ORE = registerSimpleBlock("lead_ore", Blocks.IRON_ORE);
-    public static final DeferredBlock<Block> DEEPSLATE_LEAD_ORE = registerSimpleBlock("deepslate_lead_ore", Blocks.DEEPSLATE_IRON_ORE);
-    public static final DeferredBlock<Block> LEAD_BLOCK = registerSimpleBlock("lead_block", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> RAW_LEAD_BLOCK = registerSimpleBlock("raw_lead_block", Blocks.RAW_IRON_BLOCK);
+    public static final DeferredBlock<Block> ORE_LEAD = registerSimpleBlock("ore_lead", Blocks.IRON_ORE);
+    public static final DeferredBlock<Block> ORE_LEAD_DEEPSLATE = registerSimpleBlock("ore_lead_deepslate", Blocks.DEEPSLATE_IRON_ORE);
+    public static final DeferredBlock<Block> BLOCK_LEAD = registerSimpleBlock("block_lead", Blocks.IRON_BLOCK);
+    public static final DeferredBlock<Block> RAW_BLOCK_LEAD = registerSimpleBlock("raw_block_lead", Blocks.RAW_IRON_BLOCK);
 
-    public static final DeferredBlock<Block> LITHIUM_ORE = registerSimpleBlock("lithium_ore", Blocks.IRON_ORE);
-    public static final DeferredBlock<Block> LITHIUM_BLOCK = registerSimpleBlock("lithium_block", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> RAW_LITHIUM_BLOCK = registerSimpleBlock("raw_lithium_block", Blocks.RAW_IRON_BLOCK);
+    public static final DeferredBlock<Block> ORE_NICKEL = registerSimpleBlock("ore_nickel", Blocks.IRON_ORE);
+    public static final DeferredBlock<Block> ORE_NICKEL_DEEPSLATE = registerSimpleBlock("ore_nickel_deepslate", Blocks.DEEPSLATE_IRON_ORE);
+    public static final DeferredBlock<Block> BLOCK_NICKEL = registerSimpleBlock("block_nickel", Blocks.IRON_BLOCK);
+    public static final DeferredBlock<Block> RAW_BLOCK_NICKEL = registerSimpleBlock("raw_block_nickel", Blocks.RAW_IRON_BLOCK);
 
-    public static final DeferredBlock<Block> NICKEL_ORE = registerSimpleBlock("nickel_ore", Blocks.IRON_ORE);
-    public static final DeferredBlock<Block> NICKEL_BLOCK = registerSimpleBlock("nickel_block", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> RAW_NICKEL_BLOCK = registerSimpleBlock("raw_nickel_block", Blocks.RAW_IRON_BLOCK);
+    public static final DeferredBlock<Block> ORE_URANIUM = registerSimpleBlock("ore_uranium", Blocks.IRON_ORE);
+    public static final DeferredBlock<Block> ORE_URANIUM_DEEPSLATE = registerSimpleBlock("ore_uranium_deepslate", Blocks.DEEPSLATE_IRON_ORE);
+    public static final DeferredBlock<Block> RAW_BLOCK_URANIUM = registerSimpleBlock("raw_block_uranium", Blocks.RAW_IRON_BLOCK);
 
-    public static final DeferredBlock<Block> URANIUM_ORE = registerSimpleBlock("uranium_ore", Blocks.IRON_ORE);
-    public static final DeferredBlock<Block> URANIUM_BLOCK = registerSimpleBlock("uranium_block", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> RAW_URANIUM_BLOCK = registerSimpleBlock("raw_uranium_block", Blocks.RAW_IRON_BLOCK);
-
-    public static final DeferredBlock<Block> ZINC_ORE = registerSimpleBlock("zinc_ore", Blocks.IRON_ORE);
-    public static final DeferredBlock<Block> ZINC_BLOCK = registerSimpleBlock("zinc_block", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> RAW_ZINC_BLOCK = registerSimpleBlock("raw_zinc_block", Blocks.RAW_IRON_BLOCK);
+    public static final DeferredBlock<Block> ORE_ZINC = registerSimpleBlock("ore_zinc", Blocks.IRON_ORE);
+    public static final DeferredBlock<Block> ORE_ZINC_DEEPSLATE = registerSimpleBlock("ore_zinc_deepslate", Blocks.DEEPSLATE_IRON_ORE);
+    public static final DeferredBlock<Block> BLOCK_ZINC = registerSimpleBlock("block_zinc", Blocks.IRON_BLOCK);
+    public static final DeferredBlock<Block> RAW_BLOCK_ZINC = registerSimpleBlock("raw_block_zinc", Blocks.RAW_IRON_BLOCK);
 
     public static final DeferredBlock<Block> BAUXITE = registerSimpleBlock("bauxite", Blocks.IRON_ORE);
 
-    public static final DeferredBlock<Block> REINFORCED_CONCRETE = registerSimpleBlock("reinforced_concrete", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> CRACKED_CONCRETE = registerSimpleBlock("cracked_concrete", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> DAMAGED_CONCRETE = registerSimpleBlock("damaged_concrete", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> FRACTURED_CONCRETE = registerSimpleBlock("fractured_concrete", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> DESTROYED_CONCRETE = registerSimpleBlock("destroyed_concrete", Blocks.IRON_BLOCK);
-    public static final DeferredBlock<Block> OVERGROWN_REINFORCED_CONCRETE = registerSimpleBlock("overgrown_reinforced_concrete", Blocks.IRON_BLOCK);
+    public static final DeferredBlock<Block> CEMENTITE_REINFORCED = registerSimpleBlock("cementite_reinforced", Blocks.STONE);
+    public static final DeferredBlock<Block> CEMENTITE_CRACKED = registerSimpleBlock("cementite_cracked", Blocks.STONE);
+    public static final DeferredBlock<Block> CEMENTITE_DAMAGED = registerSimpleBlock("cementite_damaged", Blocks.STONE);
+    public static final DeferredBlock<Block> CEMENTITE_FRACTURED = registerSimpleBlock("cementite_fractured", Blocks.STONE);
+    public static final DeferredBlock<Block> CEMENTITE_DESTROYED = registerSimpleBlock("cementite_destroyed", Blocks.STONE);
+    public static final DeferredBlock<Block> CEMENTITE_OVERGROWN = registerSimpleBlock("cementite_overgrown", Blocks.STONE);
 
     public static final DeferredBlock<IronBarsBlock> REBAR = BLOCKS.registerBlock(
             "rebar",
