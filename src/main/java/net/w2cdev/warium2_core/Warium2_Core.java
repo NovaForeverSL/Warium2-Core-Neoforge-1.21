@@ -77,6 +77,7 @@ public class Warium2_Core {
             List.of(
 
                     ModItems.BAUXITE,
+                    ModItems.TRINITITE,
                     ModItems.ORE_BERYLLIUM,
                     ModItems.ORE_BERYLLIUM_DEEPSLATE,
                     ModItems.ORE_LEAD,
