@@ -32,7 +32,7 @@ public class Warium2_Core {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MAIN_TAB = CREATIVE_MODE_TABS.register(MODID, () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.warium2_core"))
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> ModItems.ZINC.get().getDefaultInstance())
+            .icon(() -> ModItems.INGOT_ZINC.get().getDefaultInstance())
             .displayItems((parameters, output) -> ModItems.ITEMS.getEntries().forEach(item -> output.accept(item.get())))
             .build());
 
@@ -52,7 +52,7 @@ public class Warium2_Core {
         LOGGER.info("HELLO FROM COMMON SETUP");
 
         if (Config.LOG_ZINC_ITEM.getAsBoolean()) {
-            LOGGER.info("ZINC ITEM >> {}", BuiltInRegistries.ITEM.getKey(ModItems.ZINC.get()));
+            LOGGER.info("ZINC ITEM >> {}", BuiltInRegistries.ITEM.getKey(ModItems.INGOT_ZINC.get()));
         }
 
         Config.ITEM_STRINGS.get().forEach(item -> LOGGER.info("ITEM >> {}", item));
@@ -61,49 +61,47 @@ public class Warium2_Core {
     private void addCreative(final BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             List.of(
-                    ModItems.ZINC,
+                    ModItems.INGOT_ZINC,
+                    ModItems.INGOT_BERYLLIUM,
+                    ModItems.INGOT_NICKEL,
+                    ModItems.INGOT_LEAD,
                     ModItems.RAW_ZINC,
-                    ModItems.BERYLLIUM_INGOT,
                     ModItems.RAW_BERYLLIUM,
-                    ModItems.LEAD_INGOT,
                     ModItems.RAW_LEAD,
-                    ModItems.LITHIUM_INGOT,
-                    ModItems.RAW_LITHIUM,
-                    ModItems.NICKEL_INGOT,
                     ModItems.RAW_NICKEL,
-                    ModItems.URANIUM_INGOT,
                     ModItems.RAW_URANIUM
             ).forEach(event::accept);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             List.of(
-                    ModItems.BERYLLIUM_ORE,
-                    ModItems.BERYLLIUM_BLOCK,
-                    ModItems.RAW_BERYLLIUM_BLOCK,
-                    ModItems.LEAD_ORE,
-                    ModItems.DEEPSLATE_LEAD_ORE,
-                    ModItems.LEAD_BLOCK,
-                    ModItems.RAW_LEAD_BLOCK,
-                    ModItems.LITHIUM_ORE,
-                    ModItems.LITHIUM_BLOCK,
-                    ModItems.RAW_LITHIUM_BLOCK,
-                    ModItems.NICKEL_ORE,
-                    ModItems.NICKEL_BLOCK,
-                    ModItems.RAW_NICKEL_BLOCK,
-                    ModItems.URANIUM_ORE,
-                    ModItems.URANIUM_BLOCK,
-                    ModItems.RAW_URANIUM_BLOCK,
-                    ModItems.ZINC_ORE,
-                    ModItems.ZINC_BLOCK,
-                    ModItems.RAW_ZINC_BLOCK,
+
                     ModItems.BAUXITE,
-                    ModItems.REINFORCED_CONCRETE,
-                    ModItems.CRACKED_CONCRETE,
-                    ModItems.DAMAGED_CONCRETE,
-                    ModItems.FRACTURED_CONCRETE,
-                    ModItems.DESTROYED_CONCRETE,
-                    ModItems.OVERGROWN_REINFORCED_CONCRETE,
+                    ModItems.ORE_BERYLLIUM,
+                    ModItems.ORE_BERYLLIUM_DEEPSLATE,
+                    ModItems.ORE_LEAD,
+                    ModItems.ORE_LEAD_DEEPSLATE,
+                    ModItems.ORE_NICKEL,
+                    ModItems.ORE_NICKEL_DEEPSLATE,
+                    ModItems.ORE_URANIUM,
+                    ModItems.ORE_URANIUM_DEEPSLATE,
+                    ModItems.ORE_ZINC,
+                    ModItems.ORE_ZINC_DEEPSLATE,
+                    ModItems.BLOCK_BERYLLIUM,
+                    ModItems.BLOCK_LEAD,
+                    ModItems.BLOCK_NICKEL,
+                    ModItems.BLOCK_ZINC,
+                    ModItems.RAW_BLOCK_BERYLLIUM,
+                    ModItems.RAW_BLOCK_LEAD,
+                    ModItems.RAW_BLOCK_NICKEL,
+                    ModItems.RAW_BLOCK_URANIUM,
+                    ModItems.RAW_BLOCK_ZINC,
+                    ModItems.CEMENTITE_REINFORCED,
+                    ModItems.CEMENTITE_CRACKED,
+                    ModItems.CEMENTITE_DAMAGED,
+                    ModItems.CEMENTITE_FRACTURED,
+                    ModItems.CEMENTITE_DESTROYED,
+                    ModItems.CEMENTITE_OVERGROWN,
                     ModItems.REBAR
             ).forEach(event::accept);
         }
@@ -114,3 +112,4 @@ public class Warium2_Core {
         LOGGER.info("HELLO from server starting");
     }
 }
+
