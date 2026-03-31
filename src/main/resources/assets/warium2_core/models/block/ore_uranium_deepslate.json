@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "warium2_core:block/ore_uranium_deepslate",
+    "particle": "warium2_core:block/ore_uranium_deepslate"
+  },
+  "render_type": "solid"
+}

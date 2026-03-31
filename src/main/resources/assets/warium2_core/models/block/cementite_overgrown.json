@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "warium2_core:block/cementite_overgrown",
+    "particle": "warium2_core:block/cementite_overgrown"
+  },
+  "render_type": "solid"
+}
