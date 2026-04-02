@@ -2,7 +2,9 @@ package net.w2cdev.warium2_core.item;
 
 import net.w2cdev.warium2_core.Warium2_Core;
 import net.w2cdev.warium2_core.block.ModBlocks;
+import net.w2cdev.warium2_core.fluid.ModFluids;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -49,6 +51,14 @@ public final class ModItems {
     public static final DeferredItem<BlockItem> ORE_ZINC_DEEPSLATE = registerBlockItem("ore_zinc_deepslate", ModBlocks.ORE_ZINC_DEEPSLATE);
     public static final DeferredItem<BlockItem> BLOCK_ZINC = registerBlockItem("block_zinc", ModBlocks.BLOCK_ZINC);
     public static final DeferredItem<BlockItem> RAW_BLOCK_ZINC = registerBlockItem("raw_block_zinc", ModBlocks.RAW_BLOCK_ZINC);
+
+    public static final DeferredItem<Item> BUCKET_DIESEL = ITEMS.register("bucket_diesel", () -> new BucketItem(ModFluids.DIESEL.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BUCKET_KEROSENE = ITEMS.register("bucket_kerosene", () -> new BucketItem(ModFluids.KEROSENE.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BUCKET_OIL = ITEMS.register("bucket_oil", () -> new BucketItem(ModFluids.OIL.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BUCKET_PETROL = ITEMS.register("bucket_petrol", () -> new BucketItem(ModFluids.PETROL.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BUCKET_SULFURIC_ACID = ITEMS.register("bucket_sulfuric_acid", () -> new BucketItem(ModFluids.SULFURIC_ACID.get(), new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<BlockItem> CEMENTITE_STRUCTURAL = registerBlockItem("cementite_structural", ModBlocks.CEMENTITE_STRUCTURAL);
 
     public static final DeferredItem<BlockItem> BAUXITE = registerBlockItem("bauxite", ModBlocks.BAUXITE);
     public static final DeferredItem<BlockItem> TRINITITE = registerBlockItem("trinitite", ModBlocks.TRINITITE);

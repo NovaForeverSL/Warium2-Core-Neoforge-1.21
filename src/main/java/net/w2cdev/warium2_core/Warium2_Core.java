@@ -2,13 +2,16 @@ package net.w2cdev.warium2_core;
 
 import com.mojang.logging.LogUtils;
 import java.util.List;
+import java.util.Set;
 import net.w2cdev.warium2_core.block.ModBlocks;
 import net.w2cdev.warium2_core.item.ModItems;
+import net.w2cdev.warium2_core.fluid.ModFluids;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -29,11 +32,43 @@ public class Warium2_Core {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MAIN_TAB = CREATIVE_MODE_TABS.register(MODID, () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.warium2_core"))
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RESOURCES_TAB = CREATIVE_MODE_TABS.register("resources", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.warium2_core.resources"))
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ModItems.INGOT_ZINC.get().getDefaultInstance())
-            .displayItems((parameters, output) -> ModItems.ITEMS.getEntries().forEach(item -> output.accept(item.get())))
+            .displayItems((parameters, output) -> {
+                final Set<Item> constructionItems = Set.of(
+                        ModItems.CEMENTITE_REINFORCED.get(),
+                        ModItems.CEMENTITE_CRACKED.get(),
+                        ModItems.CEMENTITE_DAMAGED.get(),
+                        ModItems.CEMENTITE_FRACTURED.get(),
+                        ModItems.CEMENTITE_DESTROYED.get(),
+                        ModItems.CEMENTITE_OVERGROWN.get(),
+                        ModItems.CEMENTITE_STRUCTURAL.get(),
+                        ModItems.REBAR.get()
+                );
+
+                ModItems.ITEMS.getEntries().stream()
+                        .map(entry -> entry.get())
+                        .filter(item -> !constructionItems.contains(item))
+                        .forEach(output::accept);
+            })
+            .build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CONSTRUCTIONS_TAB = CREATIVE_MODE_TABS.register("constructions", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.warium2_core.constructions"))
+            .withTabsBefore(CreativeModeTabs.COMBAT)
+            .icon(() -> ModItems.CEMENTITE_REINFORCED.get().getDefaultInstance())
+            .displayItems((parameters, output) -> List.of(
+                    ModItems.CEMENTITE_REINFORCED,
+                    ModItems.CEMENTITE_CRACKED,
+                    ModItems.CEMENTITE_DAMAGED,
+                    ModItems.CEMENTITE_FRACTURED,
+                    ModItems.CEMENTITE_DESTROYED,
+                    ModItems.CEMENTITE_OVERGROWN,
+                    ModItems.CEMENTITE_STRUCTURAL,
+                    ModItems.REBAR
+            ).forEach(output::accept))
             .build());
 
     public Warium2_Core(final IEventBus modEventBus, final ModContainer modContainer) {
@@ -42,6 +77,7 @@ public class Warium2_Core {
 
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
+        ModFluids.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
@@ -75,7 +111,6 @@ public class Warium2_Core {
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             List.of(
-
                     ModItems.BAUXITE,
                     ModItems.TRINITITE,
                     ModItems.ORE_BERYLLIUM,
@@ -103,6 +138,7 @@ public class Warium2_Core {
                     ModItems.CEMENTITE_FRACTURED,
                     ModItems.CEMENTITE_DESTROYED,
                     ModItems.CEMENTITE_OVERGROWN,
+                    ModItems.CEMENTITE_STRUCTURAL,
                     ModItems.REBAR
             ).forEach(event::accept);
         }
@@ -113,4 +149,3 @@ public class Warium2_Core {
         LOGGER.info("HELLO from server starting");
     }
 }
-

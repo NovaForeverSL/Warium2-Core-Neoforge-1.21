@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "warium2_core:ore_beryllium",
+    "warium2_core:ore_beryllium_deepslate",
+    "warium2_core:block_beryllium",
+    "warium2_core:raw_block_beryllium",
+    "warium2_core:ore_lead",
+    "warium2_core:ore_lead_deepslate",
+    "warium2_core:block_lead",
+    "warium2_core:raw_block_lead",
+    "warium2_core:ore_nickel",
+    "warium2_core:ore_nickel_deepslate",
+    "warium2_core:block_nickel",
+    "warium2_core:raw_block_nickel",
+    "warium2_core:ore_uranium",
+    "warium2_core:ore_uranium_deepslate",
+    "warium2_core:raw_block_uranium",
+    "warium2_core:trinitite",
+    "warium2_core:cementite_reinforced",
+    "warium2_core:cementite_cracked",
+    "warium2_core:cementite_damaged",
+    "warium2_core:cementite_fractured",
+    "warium2_core:cementite_destroyed",
+    "warium2_core:cementite_overgrown",
+    "warium2_core:rebar",
+    "warium2_core:cementite_structural"
+  ]
+}

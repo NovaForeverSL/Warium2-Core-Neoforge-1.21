@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "warium2_core:bauxite",
+    "warium2_core:ore_zinc",
+    "warium2_core:ore_zinc_deepslate",
+    "warium2_core:block_zinc",
+    "warium2_core:raw_block_zinc"
+  ]
+}

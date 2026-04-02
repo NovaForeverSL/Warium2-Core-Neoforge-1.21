@@ -38,5 +38,17 @@
   "item.warium2_core.raw_nickel": "Raw Nickel",
   "item.warium2_core.raw_uranium": "Raw Uranium",
   "item.warium2_core.raw_zinc": "Raw Zinc",
-  "itemGroup.warium2_core": "Warium 2 Core"
+  "itemGroup.warium2_core.resources": "Warium 2 Core: Resources",
+  "itemGroup.warium2_core.constructions": "Warium 2 Core: Construction",
+  "block.warium2_core.cementite_structural": "Structural Reinforced Concrete",
+  "item.warium2_core.bucket_diesel": "Diesel Bucket",
+  "item.warium2_core.bucket_kerosene": "Kerosene Bucket",
+  "item.warium2_core.bucket_oil": "Oil Bucket",
+  "item.warium2_core.bucket_petrol": "Petrol Bucket",
+  "item.warium2_core.bucket_sulfuric_acid": "Sulfuric Acid Bucket",
+  "fluid_type.warium2_core.diesel": "Diesel",
+  "fluid_type.warium2_core.kerosene": "Kerosene",
+  "fluid_type.warium2_core.oil": "Oil",
+  "fluid_type.warium2_core.petrol": "Petrol",
+  "fluid_type.warium2_core.sulfuric_acid": "Sulfuric Acid"
 }

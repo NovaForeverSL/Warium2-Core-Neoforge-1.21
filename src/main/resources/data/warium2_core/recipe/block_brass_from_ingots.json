@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "warium2_core:ingot_brass"
+    }
+  },
+  "result": {
+    "id": "warium2_core:block_brass",
+    "count": 1
+  }
+}

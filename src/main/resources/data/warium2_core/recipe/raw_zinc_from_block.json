@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "warium2_core:raw_block_zinc"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "warium2_core:raw_zinc"
+  }
+}

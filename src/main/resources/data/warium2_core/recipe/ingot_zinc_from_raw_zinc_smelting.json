@@ -1,10 +1,13 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
-  "experience": 1,
+  "experience": 1.0,
   "cookingtime": 200,
   "ingredient": {
     "item": "warium2_core:raw_zinc"
   },
-  "result": "warium2_core:ingot_zinc"
+  "result": {
+    "id": "warium2_core:ingot_zinc",
+    "count": 1
+  }
 }

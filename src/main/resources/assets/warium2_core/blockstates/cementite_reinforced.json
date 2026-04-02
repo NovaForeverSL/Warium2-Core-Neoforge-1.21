@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "warium2_core:block/cementite_reinforced" }
+    "damage=0,snowy=false": { "model": "warium2_core:block/cementite_reinforced" },
+    "damage=0,snowy=true": { "model": "warium2_core:block/cementite_reinforced_snowy" },
+    "damage=1": { "model": "warium2_core:block/cementite_cracked" },
+    "damage=2": { "model": "warium2_core:block/cementite_damaged" },
+    "damage=3": { "model": "warium2_core:block/cementite_fractured" },
+    "damage=4": { "model": "warium2_core:block/cementite_destroyed" }
   }
 }

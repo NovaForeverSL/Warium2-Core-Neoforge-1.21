@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "warium2_core:block_brass"
+    }
+  ],
+  "result": {
+    "id": "warium2_core:ingot_brass",
+    "count": 9
+  }
+}

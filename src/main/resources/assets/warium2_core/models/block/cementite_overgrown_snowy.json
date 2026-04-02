@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "warium2_core:block/cementite_overgrown",
+    "bottom": "warium2_core:block/cementite_overgrown",
+    "top": "minecraft:block/snow",
+    "particle": "warium2_core:block/cementite_overgrown"
+  },
+  "render_type": "solid"
+}

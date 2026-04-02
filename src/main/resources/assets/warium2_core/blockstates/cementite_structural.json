@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "warium2_core:block/cementite_structural_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "warium2_core:block/cementite_structural"
+    },
+    "axis=z": {
+      "model": "warium2_core:block/cementite_structural_horizontal",
+      "x": 90
+    }
+  }
+}
