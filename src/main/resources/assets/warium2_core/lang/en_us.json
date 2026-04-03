@@ -5,6 +5,7 @@
   "block.warium2_core.block_nickel": "Block of Nickel",
   "block.warium2_core.block_uranium": "Block of Uranium",
   "block.warium2_core.block_zinc": "Block of Zinc",
+  "block.warium2_core.block_steel": "Block of Steel",
   "block.warium2_core.cementite_cracked": "Cracked Reinforced Concrete",
   "block.warium2_core.cementite_damaged": "Damaged Reinforced Concrete",
   "block.warium2_core.cementite_destroyed": "Destroyed Reinforced Concrete",
@@ -31,6 +32,8 @@
   "item.warium2_core.ingot_beryllium": "Beryllium Ingot",
   "item.warium2_core.ingot_lead": "Lead Ingot",
   "item.warium2_core.ingot_nickel": "Nickel Ingot",
+  "item.warium2_core.ingot_steel": "Steel Ingot",
+  "item.warium2_core.paint_gun": "Paint Gun",
   "item.warium2_core.ingot_uranium": "Uranium Ingot",
   "item.warium2_core.ingot_zinc": "Zinc Ingot",
   "item.warium2_core.raw_beryllium": "Raw Beryllium",
@@ -51,4 +54,6 @@
   "fluid_type.warium2_core.oil": "Oil",
   "fluid_type.warium2_core.petrol": "Petrol",
   "fluid_type.warium2_core.sulfuric_acid": "Sulfuric Acid"
+  ,"item.warium2_core.ingot_aluminum": "Aluminum Ingot"
+  ,"block.warium2_core.block_aluminum": "Aluminum Plating"
 }

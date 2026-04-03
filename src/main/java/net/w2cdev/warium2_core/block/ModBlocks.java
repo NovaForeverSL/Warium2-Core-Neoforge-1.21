@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.PushReaction;
 import net.w2cdev.warium2_core.block.custom.DamageableCementiteBlock;
+import net.w2cdev.warium2_core.block.custom.PaintableMetalBlock;
 import net.w2cdev.warium2_core.fluid.ModFluids;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -41,6 +42,18 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> ORE_ZINC_DEEPSLATE = registerSimpleBlock("ore_zinc_deepslate", Blocks.DEEPSLATE_IRON_ORE);
     public static final DeferredBlock<Block> BLOCK_ZINC = registerSimpleBlock("block_zinc", Blocks.IRON_BLOCK);
     public static final DeferredBlock<Block> RAW_BLOCK_ZINC = registerSimpleBlock("raw_block_zinc", Blocks.RAW_IRON_BLOCK);
+
+    public static final DeferredBlock<PaintableMetalBlock> BLOCK_STEEL = BLOCKS.registerBlock(
+            "block_steel",
+            PaintableMetalBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
+    );
+
+    public static final DeferredBlock<PaintableMetalBlock> BLOCK_ALUMINUM = BLOCKS.registerBlock(
+            "block_aluminum",
+            PaintableMetalBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
+    );
 
     public static final DeferredBlock<Block> BAUXITE = registerSimpleBlock("bauxite", Blocks.IRON_ORE);
     public static final DeferredBlock<Block> TRINITITE = registerSimpleBlock("trinitite", Blocks.GLASS);

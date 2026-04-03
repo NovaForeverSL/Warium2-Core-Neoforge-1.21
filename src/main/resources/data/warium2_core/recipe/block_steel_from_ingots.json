@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "warium2_core:ingot_steel"
+    }
+  },
+  "result": {
+    "id": "warium2_core:block_steel",
+    "count": 1
+  }
+}

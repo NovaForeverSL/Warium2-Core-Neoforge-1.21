@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "warium2_core:ingot_aluminum"
+    }
+  },
+  "result": {
+    "id": "warium2_core:block_aluminum",
+    "count": 1
+  }
+}

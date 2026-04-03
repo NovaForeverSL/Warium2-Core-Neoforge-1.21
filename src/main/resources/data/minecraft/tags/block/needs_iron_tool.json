@@ -24,6 +24,8 @@
     "warium2_core:cementite_destroyed",
     "warium2_core:cementite_overgrown",
     "warium2_core:rebar",
-    "warium2_core:cementite_structural"
+    "warium2_core:cementite_structural",
+    "warium2_core:block_steel",
+    "warium2_core:block_aluminum"
   ]
 }

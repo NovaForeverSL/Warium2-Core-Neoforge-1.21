@@ -6,6 +6,7 @@ import java.util.Set;
 import net.w2cdev.warium2_core.block.ModBlocks;
 import net.w2cdev.warium2_core.item.ModItems;
 import net.w2cdev.warium2_core.fluid.ModFluids;
+import net.w2cdev.warium2_core.block.entity.ModBlockEntities;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -78,6 +79,7 @@ public class Warium2_Core {
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModFluids.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
@@ -105,7 +107,17 @@ public class Warium2_Core {
                     ModItems.RAW_BERYLLIUM,
                     ModItems.RAW_LEAD,
                     ModItems.RAW_NICKEL,
-                    ModItems.RAW_URANIUM
+                    ModItems.RAW_URANIUM,
+                    ModItems.INGOT_STEEL,
+                    ModItems.INGOT_ALUMINUM,
+                    ModItems.PAINT_GUN
+            ).forEach(event::accept);
+        }
+
+
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            List.of(
+                    ModItems.PAINT_GUN
             ).forEach(event::accept);
         }
 
@@ -132,6 +144,8 @@ public class Warium2_Core {
                     ModItems.RAW_BLOCK_NICKEL,
                     ModItems.RAW_BLOCK_URANIUM,
                     ModItems.RAW_BLOCK_ZINC,
+                    ModItems.BLOCK_STEEL,
+                    ModItems.BLOCK_ALUMINUM,
                     ModItems.CEMENTITE_REINFORCED,
                     ModItems.CEMENTITE_CRACKED,
                     ModItems.CEMENTITE_DAMAGED,
