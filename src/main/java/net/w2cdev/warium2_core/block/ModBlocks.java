@@ -47,13 +47,13 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> BLOCK_ALUMINUM = registerSimpleBlock("block_aluminum", Blocks.IRON_BLOCK);
 
     public static final DeferredBlock<PaintableMetalBlock> PLATING_STEEL = BLOCKS.registerBlock(
-            "block_steel",
+            "plating_steel",
             PaintableMetalBlock::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
     );
 
     public static final DeferredBlock<PaintableMetalBlock> PLATING_ALUMINUM = BLOCKS.registerBlock(
-            "block_aluminum",
+            "plating_aluminum",
             PaintableMetalBlock::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
     );
