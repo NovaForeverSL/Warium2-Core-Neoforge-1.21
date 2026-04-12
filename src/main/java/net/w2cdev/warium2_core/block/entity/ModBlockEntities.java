@@ -13,7 +13,7 @@ public final class ModBlockEntities {
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PaintableMetalBlockEntity>> PAINTABLE_METAL_BLOCK = BLOCK_ENTITY_TYPES.register(
             "paintable_metal_block",
-            () -> BlockEntityType.Builder.of(PaintableMetalBlockEntity::new, ModBlocks.BLOCK_STEEL.get(), ModBlocks.BLOCK_ALUMINUM.get()).build(null)
+            () -> BlockEntityType.Builder.of(PaintableMetalBlockEntity::new, ModBlocks.PLATING_STEEL.get(), ModBlocks.PLATING_ALUMINUM.get()).build(null)
     );
 
     private ModBlockEntities() {
