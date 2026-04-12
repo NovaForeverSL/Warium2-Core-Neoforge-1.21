@@ -57,6 +57,9 @@ public final class ModItems {
     public static final DeferredItem<BlockItem> RAW_BLOCK_ZINC = registerBlockItem("raw_block_zinc", ModBlocks.RAW_BLOCK_ZINC);
     public static final DeferredItem<BlockItem> BLOCK_STEEL = registerBlockItem("block_steel", ModBlocks.BLOCK_STEEL);
     public static final DeferredItem<BlockItem> BLOCK_ALUMINUM = registerBlockItem("block_aluminum", ModBlocks.BLOCK_ALUMINUM);
+    
+    public static final DeferredItem<BlockItem> BLOCK_STEEL = registerBlockItem("plating_steel", ModBlocks.PLATING_STEEL);
+    public static final DeferredItem<BlockItem> BLOCK_ALUMINUM = registerBlockItem("plating_aluminum", ModBlocks.PLATING_ALUMINUM);
 
     public static final DeferredItem<Item> BUCKET_DIESEL = ITEMS.register("bucket_diesel", () -> new BucketItem(ModFluids.DIESEL.get(), new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> BUCKET_KEROSENE = ITEMS.register("bucket_kerosene", () -> new BucketItem(ModFluids.KEROSENE.get(), new Item.Properties().stacksTo(1)));
