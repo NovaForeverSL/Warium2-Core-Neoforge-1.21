@@ -29,12 +29,12 @@ public final class ModColorHandlers {
             }
 
             return PaintableMetalBlockEntity.DEFAULT_COLOR;
-        }, ModBlocks.BLOCK_STEEL.get(), ModBlocks.BLOCK_ALUMINUM.get());
+        }, ModBlocks.PLATING_STEEL.get(), ModBlocks.PLATING_ALUMINUM.get());
     }
 
     @SubscribeEvent
     public static void registerItemColors(final RegisterColorHandlersEvent.Item event) {
         event.register((stack, tintIndex) -> tintIndex == 0 ? DyedItemColor.getOrDefault(stack, 0xFFFFFFFF) : 0xFFFFFFFF,
-                ModItems.PAINT_GUN.get(), ModItems.BLOCK_STEEL.get(), ModItems.BLOCK_ALUMINUM.get());
+                ModItems.PAINT_GUN.get(), ModItems.PLATING_STEEL.get(), ModItems.PLATING_ALUMINUM.get());
     }
 }
