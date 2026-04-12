@@ -43,13 +43,16 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> BLOCK_ZINC = registerSimpleBlock("block_zinc", Blocks.IRON_BLOCK);
     public static final DeferredBlock<Block> RAW_BLOCK_ZINC = registerSimpleBlock("raw_block_zinc", Blocks.RAW_IRON_BLOCK);
 
-    public static final DeferredBlock<PaintableMetalBlock> BLOCK_STEEL = BLOCKS.registerBlock(
+    public static final DeferredBlock<Block> BLOCK_STEEL = registerSimpleBlock("block_steel", Blocks.IRON_BLOCK);
+    public static final DeferredBlock<Block> BLOCK_ALUMINUM = registerSimpleBlock("block_aluminum", Blocks.IRON_BLOCK);
+
+    public static final DeferredBlock<PaintableMetalBlock> PLATING_STEEL = BLOCKS.registerBlock(
             "block_steel",
             PaintableMetalBlock::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
     );
 
-    public static final DeferredBlock<PaintableMetalBlock> BLOCK_ALUMINUM = BLOCKS.registerBlock(
+    public static final DeferredBlock<PaintableMetalBlock> PLATING_ALUMINUM = BLOCKS.registerBlock(
             "block_aluminum",
             PaintableMetalBlock::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
