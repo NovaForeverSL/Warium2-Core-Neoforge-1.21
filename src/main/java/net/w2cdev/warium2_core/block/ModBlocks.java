@@ -61,13 +61,6 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> BAUXITE = registerSimpleBlock("bauxite", Blocks.IRON_ORE);
     public static final DeferredBlock<Block> TRINITITE = registerSimpleBlock("trinitite", Blocks.GLASS);
 
-    public static final DeferredBlock<RotatedPillarBlock> CEMENTITE_STRUCTURAL = BLOCKS.registerBlock(
-            "cementite_structural",
-            RotatedPillarBlock::new,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(4.0F, 12.0F)
-                    .requiresCorrectToolForDrops()
-    );
-
     public static final DeferredBlock<LiquidBlock> DIESEL = registerFluidBlock("diesel", ModFluids.DIESEL);
     public static final DeferredBlock<LiquidBlock> KEROSENE = registerFluidBlock("kerosene", ModFluids.KEROSENE);
     public static final DeferredBlock<LiquidBlock> OIL = registerFluidBlock("oil", ModFluids.OIL);
@@ -80,14 +73,17 @@ public final class ModBlocks {
             BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(4.0F, 12.0F)
                     .requiresCorrectToolForDrops()
     );
-    public static final DeferredBlock<Block> CEMENTITE_CRACKED = registerSimpleBlock("cementite_cracked", Blocks.STONE);
-    public static final DeferredBlock<Block> CEMENTITE_DAMAGED = registerSimpleBlock("cementite_damaged", Blocks.STONE);
-    public static final DeferredBlock<Block> CEMENTITE_FRACTURED = registerSimpleBlock("cementite_fractured", Blocks.STONE);
-    public static final DeferredBlock<Block> CEMENTITE_DESTROYED = registerSimpleBlock("cementite_destroyed", Blocks.STONE);
     public static final DeferredBlock<DamageableCementiteBlock> CEMENTITE_OVERGROWN = BLOCKS.registerBlock(
             "cementite_overgrown",
             DamageableCementiteBlock::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(4.0F, 12.0F)
+                    .requiresCorrectToolForDrops()
+    );
+
+     public static final DeferredBlock<DamageableCementiteBlock> CEMENTITE_STRUCTURAL = BLOCKS.registerBlock(
+            "cementite_structural",
+            RotatedPillarBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(12.0F, 42.0F)
                     .requiresCorrectToolForDrops()
     );
 
