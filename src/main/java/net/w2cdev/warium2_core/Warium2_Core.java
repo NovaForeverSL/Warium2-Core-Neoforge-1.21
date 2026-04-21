@@ -40,10 +40,6 @@ public class Warium2_Core {
             .displayItems((parameters, output) -> {
                 final Set<Item> constructionItems = Set.of(
                         ModItems.CEMENTITE_REINFORCED.get(),
-                        ModItems.CEMENTITE_CRACKED.get(),
-                        ModItems.CEMENTITE_DAMAGED.get(),
-                        ModItems.CEMENTITE_FRACTURED.get(),
-                        ModItems.CEMENTITE_DESTROYED.get(),
                         ModItems.CEMENTITE_OVERGROWN.get(),
                         ModItems.CEMENTITE_STRUCTURAL.get(),
                         ModItems.REBAR.get()
@@ -62,10 +58,6 @@ public class Warium2_Core {
             .icon(() -> ModItems.CEMENTITE_REINFORCED.get().getDefaultInstance())
             .displayItems((parameters, output) -> List.of(
                     ModItems.CEMENTITE_REINFORCED,
-                    ModItems.CEMENTITE_CRACKED,
-                    ModItems.CEMENTITE_DAMAGED,
-                    ModItems.CEMENTITE_FRACTURED,
-                    ModItems.CEMENTITE_DESTROYED,
                     ModItems.CEMENTITE_OVERGROWN,
                     ModItems.CEMENTITE_STRUCTURAL,
                     ModItems.REBAR
