@@ -1,8 +1,8 @@
-package net.w2cdev.warium2_core.block.custom;
+package net.warium2_core.block.custom;
 
 import com.mojang.serialization.MapCodec;
-import net.w2cdev.warium2_core.block.entity.PaintableMetalBlockEntity;
-import net.w2cdev.warium2_core.item.ModItems;
+import net.warium2_core.block.entity.PaintableMetalBlockEntity;
+import net.warium2_core.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvents;
@@ -14,7 +14,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.DyedItemColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;

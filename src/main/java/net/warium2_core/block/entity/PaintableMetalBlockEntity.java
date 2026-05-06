@@ -1,4 +1,4 @@
-package net.w2cdev.warium2_core.block.entity;
+package net.warium2_core.block.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;

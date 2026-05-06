@@ -1,4 +1,4 @@
-package net.w2cdev.warium2_core;
+package net.warium2_core;
 
 import java.util.List;
 import net.minecraft.core.registries.BuiltInRegistries;

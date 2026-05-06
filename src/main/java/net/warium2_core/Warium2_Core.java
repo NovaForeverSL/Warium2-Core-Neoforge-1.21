@@ -1,12 +1,12 @@
-package net.w2cdev.warium2_core;
+package net.warium2_core;
 
 import com.mojang.logging.LogUtils;
 import java.util.List;
 import java.util.Set;
-import net.w2cdev.warium2_core.block.ModBlocks;
-import net.w2cdev.warium2_core.item.ModItems;
-import net.w2cdev.warium2_core.fluid.ModFluids;
-import net.w2cdev.warium2_core.block.entity.ModBlockEntities;
+import net.warium2_core.block.ModBlocks;
+import net.warium2_core.item.ModItems;
+import net.warium2_core.fluid.ModFluids;
+import net.warium2_core.block.entity.ModBlockEntities;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;

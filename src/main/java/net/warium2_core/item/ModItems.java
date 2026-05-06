@@ -1,8 +1,8 @@
-package net.w2cdev.warium2_core.item;
+package net.warium2_core.item;
 
-import net.w2cdev.warium2_core.Warium2_Core;
-import net.w2cdev.warium2_core.block.ModBlocks;
-import net.w2cdev.warium2_core.fluid.ModFluids;
+import net.warium2_core.Warium2_Core;
+import net.warium2_core.block.ModBlocks;
+import net.warium2_core.fluid.ModFluids;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;

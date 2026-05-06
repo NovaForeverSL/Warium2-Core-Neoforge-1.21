@@ -1,4 +1,4 @@
-package net.w2cdev.warium2_core.block.custom;
+package net.warium2_core.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

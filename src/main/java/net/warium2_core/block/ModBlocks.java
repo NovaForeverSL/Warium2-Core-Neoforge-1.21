@@ -1,6 +1,6 @@
-package net.w2cdev.warium2_core.block;
+package net.warium2_core.block;
 
-import net.w2cdev.warium2_core.Warium2_Core;
+import net.warium2_core.Warium2_Core;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.IronBarsBlock;
@@ -9,9 +9,9 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.PushReaction;
-import net.w2cdev.warium2_core.block.custom.DamageableCementiteBlock;
-import net.w2cdev.warium2_core.block.custom.PaintableMetalBlock;
-import net.w2cdev.warium2_core.fluid.ModFluids;
+import net.warium2_core.block.custom.DamageableCementiteBlock;
+import net.warium2_core.block.custom.PaintableMetalBlock;
+import net.warium2_core.fluid.ModFluids;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;

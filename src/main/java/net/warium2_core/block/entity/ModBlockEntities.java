@@ -1,7 +1,7 @@
-package net.w2cdev.warium2_core.block.entity;
+package net.warium2_core.block.entity;
 
-import net.w2cdev.warium2_core.Warium2_Core;
-import net.w2cdev.warium2_core.block.ModBlocks;
+import net.warium2_core.Warium2_Core;
+import net.warium2_core.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;

@@ -1,9 +1,9 @@
-package net.w2cdev.warium2_core.fluid;
+package net.warium2_core.fluid;
 
 import java.util.function.Supplier;
-import net.w2cdev.warium2_core.Warium2_Core;
-import net.w2cdev.warium2_core.block.ModBlocks;
-import net.w2cdev.warium2_core.item.ModItems;
+import net.warium2_core.Warium2_Core;
+import net.warium2_core.block.ModBlocks;
+import net.warium2_core.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

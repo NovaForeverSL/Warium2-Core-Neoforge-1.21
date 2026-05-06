@@ -1,4 +1,4 @@
-package net.w2cdev.warium2_core.event;
+package net.warium2_core.event;
 
 import java.util.Iterator;
 import net.minecraft.core.BlockPos;
@@ -10,8 +10,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.ProjectileImpactEvent;
 import net.neoforged.neoforge.event.level.ExplosionEvent;
-import net.w2cdev.warium2_core.Warium2_Core;
-import net.w2cdev.warium2_core.block.custom.DamageableCementiteBlock;
+import net.warium2_core.Warium2_Core;
+import net.warium2_core.block.custom.DamageableCementiteBlock;
 
 @EventBusSubscriber(modid = Warium2_Core.MODID)
 public final class CementiteDamageEvents {

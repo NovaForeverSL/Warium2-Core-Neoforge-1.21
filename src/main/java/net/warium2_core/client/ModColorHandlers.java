@@ -1,9 +1,9 @@
-package net.w2cdev.warium2_core.client;
+package net.warium2_core.client;
 
-import net.w2cdev.warium2_core.Warium2_Core;
-import net.w2cdev.warium2_core.block.ModBlocks;
-import net.w2cdev.warium2_core.block.entity.PaintableMetalBlockEntity;
-import net.w2cdev.warium2_core.item.ModItems;
+import net.warium2_core.Warium2_Core;
+import net.warium2_core.block.ModBlocks;
+import net.warium2_core.block.entity.PaintableMetalBlockEntity;
+import net.warium2_core.item.ModItems;
 import net.minecraft.world.item.component.DyedItemColor;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.neoforged.api.distmarker.Dist;
