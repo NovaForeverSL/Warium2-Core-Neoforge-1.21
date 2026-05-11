@@ -139,10 +139,6 @@ public class Warium2_Core {
                     ModItems.BLOCK_STEEL,
                     ModItems.BLOCK_ALUMINUM,
                     ModItems.CEMENTITE_REINFORCED,
-                    ModItems.CEMENTITE_CRACKED,
-                    ModItems.CEMENTITE_DAMAGED,
-                    ModItems.CEMENTITE_FRACTURED,
-                    ModItems.CEMENTITE_DESTROYED,
                     ModItems.CEMENTITE_OVERGROWN,
                     ModItems.CEMENTITE_STRUCTURAL,
                     ModItems.REBAR

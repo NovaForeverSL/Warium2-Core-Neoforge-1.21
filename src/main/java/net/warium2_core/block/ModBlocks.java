@@ -82,7 +82,7 @@ public final class ModBlocks {
 
      public static final DeferredBlock<DamageableCementiteBlock> CEMENTITE_STRUCTURAL = BLOCKS.registerBlock(
             "cementite_structural",
-            RotatedPillarBlock::new,
+            DamageableCementiteBlock::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(60.0F, 42.0F)
                     .requiresCorrectToolForDrops()
     );

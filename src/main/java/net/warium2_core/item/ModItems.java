@@ -73,10 +73,6 @@ public final class ModItems {
     public static final DeferredItem<BlockItem> TRINITITE = registerBlockItem("trinitite", ModBlocks.TRINITITE);
     
     public static final DeferredItem<BlockItem> CEMENTITE_REINFORCED = registerBlockItem("cementite_reinforced", ModBlocks.CEMENTITE_REINFORCED);
-    public static final DeferredItem<BlockItem> CEMENTITE_CRACKED = registerBlockItem("cementite_cracked", ModBlocks.CEMENTITE_CRACKED);
-    public static final DeferredItem<BlockItem> CEMENTITE_DAMAGED = registerBlockItem("cementite_damaged", ModBlocks.CEMENTITE_DAMAGED);
-    public static final DeferredItem<BlockItem> CEMENTITE_FRACTURED = registerBlockItem("cementite_fractured", ModBlocks.CEMENTITE_FRACTURED);
-    public static final DeferredItem<BlockItem> CEMENTITE_DESTROYED = registerBlockItem("cementite_destroyed", ModBlocks.CEMENTITE_DESTROYED);
     public static final DeferredItem<BlockItem> CEMENTITE_OVERGROWN = registerBlockItem("cementite_overgrown", ModBlocks.CEMENTITE_OVERGROWN);
     public static final DeferredItem<BlockItem> REBAR = registerBlockItem("rebar", ModBlocks.REBAR);
 

@@ -7,6 +7,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SnowLayerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,7 +17,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import org.jetbrains.annotations.Nullable;
 
 
-public class DamageableCementiteBlock extends Block {
+public class DamageableCementiteBlock extends RotatedPillarBlock {
     public static final int MAX_DAMAGE_STAGE = 4;
     public static final IntegerProperty DAMAGE = IntegerProperty.create("damage", 0, MAX_DAMAGE_STAGE);
     public static final BooleanProperty SNOWY = BooleanProperty.create("snowy");
