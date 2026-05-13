@@ -32,6 +32,9 @@ public final class ModItems {
     public static final DeferredItem<Item> INGOT_ALUMINUM = ITEMS.registerSimpleItem("ingot_aluminum", new Item.Properties());
     public static final DeferredItem<Item> PAINT_GUN = ITEMS.registerSimpleItem("paint_gun", new Item.Properties().stacksTo(1));
 
+    public static final DeferredItem<Item> TEST_GUN = ITEMS.register("test_gun",
+            () -> new TestGun(new Item.Properties().stacksTo(1)));
+
     public static final DeferredItem<BlockItem> ORE_BERYLLIUM = registerBlockItem("ore_beryllium", ModBlocks.ORE_BERYLLIUM);
     public static final DeferredItem<BlockItem> ORE_BERYLLIUM_DEEPSLATE = registerBlockItem("ore_beryllium_deepslate", ModBlocks.ORE_BERYLLIUM_DEEPSLATE);
     public static final DeferredItem<BlockItem> BLOCK_BERYLLIUM = registerBlockItem("block_beryllium", ModBlocks.BLOCK_BERYLLIUM);
@@ -57,7 +60,7 @@ public final class ModItems {
     public static final DeferredItem<BlockItem> RAW_BLOCK_ZINC = registerBlockItem("raw_block_zinc", ModBlocks.RAW_BLOCK_ZINC);
     public static final DeferredItem<BlockItem> BLOCK_STEEL = registerBlockItem("block_steel", ModBlocks.BLOCK_STEEL);
     public static final DeferredItem<BlockItem> BLOCK_ALUMINUM = registerBlockItem("block_aluminum", ModBlocks.BLOCK_ALUMINUM);
-    
+
     public static final DeferredItem<BlockItem> PLATING_STEEL = registerBlockItem("plating_steel", ModBlocks.PLATING_STEEL);
     public static final DeferredItem<BlockItem> PLATING_ALUMINUM = registerBlockItem("plating_aluminum", ModBlocks.PLATING_ALUMINUM);
 
@@ -71,7 +74,7 @@ public final class ModItems {
 
     public static final DeferredItem<BlockItem> BAUXITE = registerBlockItem("bauxite", ModBlocks.BAUXITE);
     public static final DeferredItem<BlockItem> TRINITITE = registerBlockItem("trinitite", ModBlocks.TRINITITE);
-    
+
     public static final DeferredItem<BlockItem> CEMENTITE_REINFORCED = registerBlockItem("cementite_reinforced", ModBlocks.CEMENTITE_REINFORCED);
     public static final DeferredItem<BlockItem> CEMENTITE_OVERGROWN = registerBlockItem("cementite_overgrown", ModBlocks.CEMENTITE_OVERGROWN);
     public static final DeferredItem<BlockItem> REBAR = registerBlockItem("rebar", ModBlocks.REBAR);

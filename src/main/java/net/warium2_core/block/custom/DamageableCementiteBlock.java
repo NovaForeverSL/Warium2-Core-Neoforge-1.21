@@ -25,12 +25,14 @@ public class DamageableCementiteBlock extends RotatedPillarBlock {
     public DamageableCementiteBlock(final BlockBehaviour.Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
+                .setValue(AXIS, Direction.Axis.Y)
                 .setValue(DAMAGE, 0)
                 .setValue(SNOWY, false));
     }
 
     @Override
     protected void createBlockStateDefinition(final StateDefinition.Builder<Block, BlockState> builder) {
+        super.createBlockStateDefinition(builder);
         builder.add(DAMAGE, SNOWY);
     }
 
@@ -54,7 +56,6 @@ public class DamageableCementiteBlock extends RotatedPillarBlock {
         }
         return super.updateShape(state, direction, neighborState, level, pos, neighborPos);
     }
-
 
     @Override
     protected void neighborChanged(
