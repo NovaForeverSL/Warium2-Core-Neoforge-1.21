@@ -14,7 +14,6 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.warium2_core.lib.projectile.vpl.entity.Entitys;
 import org.slf4j.Logger;
 
 @Mod(Warium2_Core.MODID)
@@ -30,8 +29,6 @@ public class Warium2_Core {
         ModFluids.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
-
-        Entitys.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

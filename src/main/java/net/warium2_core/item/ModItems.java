@@ -32,9 +32,6 @@ public final class ModItems {
     public static final DeferredItem<Item> INGOT_ALUMINUM = ITEMS.registerSimpleItem("ingot_aluminum", new Item.Properties());
     public static final DeferredItem<Item> PAINT_GUN = ITEMS.registerSimpleItem("paint_gun", new Item.Properties().stacksTo(1));
 
-    public static final DeferredItem<Item> TEST_GUN = ITEMS.register("test_gun",
-            () -> new TestGun(new Item.Properties().stacksTo(1)));
-
     public static final DeferredItem<BlockItem> ORE_BERYLLIUM = registerBlockItem("ore_beryllium", ModBlocks.ORE_BERYLLIUM);
     public static final DeferredItem<BlockItem> ORE_BERYLLIUM_DEEPSLATE = registerBlockItem("ore_beryllium_deepslate", ModBlocks.ORE_BERYLLIUM_DEEPSLATE);
     public static final DeferredItem<BlockItem> BLOCK_BERYLLIUM = registerBlockItem("block_beryllium", ModBlocks.BLOCK_BERYLLIUM);
@@ -78,6 +75,10 @@ public final class ModItems {
     public static final DeferredItem<BlockItem> CEMENTITE_REINFORCED = registerBlockItem("cementite_reinforced", ModBlocks.CEMENTITE_REINFORCED);
     public static final DeferredItem<BlockItem> CEMENTITE_OVERGROWN = registerBlockItem("cementite_overgrown", ModBlocks.CEMENTITE_OVERGROWN);
     public static final DeferredItem<BlockItem> REBAR = registerBlockItem("rebar", ModBlocks.REBAR);
+
+    public static final DeferredItem<ExplosionStick> EXPLOSION_STICK = ITEMS.register(
+            "explosion_stick", () -> new ExplosionStick(new Item.Properties())
+    );
 
     private ModItems() {
     }
