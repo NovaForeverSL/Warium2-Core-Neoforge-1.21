@@ -16,7 +16,7 @@ import net.warium2_core.lib.explosion.BaseExplosion;
 public class ExplosionStick extends Item {
 
     private static final float MIN_RADIUS = 2.0f;
-    private static final float MAX_RADIUS = 20.0f;
+    private static final float MAX_RADIUS = 15.0f;
 
     public ExplosionStick(Properties properties) {
         super(properties);
@@ -51,12 +51,15 @@ public class ExplosionStick extends Item {
                     player,
                     pos.x, pos.y, pos.z,
                     radius,
+                    1.25f,
+                    0.8f,
+                    1.25f,
                     false,
                     Explosion.BlockInteraction.DESTROY
             );
 
             explosion.explode();
-            explosion.finalizeExplosion(false);
+            explosion.finalizeExplosion(false, false, false);
         }
 
         return InteractionResultHolder.sidedSuccess(player.getItemInHand(hand), level.isClientSide());
