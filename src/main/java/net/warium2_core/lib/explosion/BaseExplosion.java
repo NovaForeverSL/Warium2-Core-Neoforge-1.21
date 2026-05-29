@@ -35,6 +35,8 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.event.EventHooks;
 
 import javax.annotation.Nullable;
@@ -48,7 +50,7 @@ import java.util.Queue;
 public class BaseExplosion {
 
     private static final ExplosionDamageCalculator DEFAULT_DAMAGE_CALCULATOR = new ExplosionDamageCalculator();
-    private static final float RAYS_PER_SURFACE_BLOCK = 1.0f;
+    private static final float RAYS_PER_SURFACE_BLOCK = 2.0f;
     private static final int   MIN_RAY_COUNT          = 32;
     private static final float STEP_SIZE              = 0.3f;
     private static final float BASE_ATTENUATION       = 0.175f;
@@ -389,7 +391,8 @@ public class BaseExplosion {
         onExplodeEnd(toDestroyLongs);
     }
 
-    public void finalizeExplosion(boolean spawnParticles, boolean playSound, boolean spawnDrops) {
+    @OnlyIn(Dist.CLIENT)
+    public void playSound(boolean playSound){
         if (playSound && this.level.isClientSide) {
             this.level.playLocalSound(
                     this.x, this.y, this.z,
@@ -400,15 +403,18 @@ public class BaseExplosion {
                     false
             );
         }
+    }
 
-        boolean interacts = this.blockInteraction != Explosion.BlockInteraction.KEEP;
-
+    @OnlyIn(Dist.CLIENT)
+    public void spawnParticles(boolean spawnParticles, boolean interacts){
         if (spawnParticles) {
             ParticleOptions particle = (this.radius >= 2.0f && interacts)
                     ? this.largeExplosionParticles : this.smallExplosionParticles;
             this.level.addParticle(particle, this.x, this.y, this.z, 1.0, 0.0, 0.0);
         }
+    }
 
+    public void interact(boolean interacts, boolean spawnDrops){
         if (interacts) {
             this.level.getProfiler().push("explosion_blocks");
 
@@ -435,9 +441,9 @@ public class BaseExplosion {
 
             this.level.getProfiler().pop();
         }
+    }
 
-        onBlocksFinalized(java.util.Collections.unmodifiableList(this.toBlow));
-
+    public void flames(){
         if (this.fire) {
             for (BlockPos pos : this.toBlow) {
                 if (this.level.random.nextInt(3) == 0
@@ -448,6 +454,22 @@ public class BaseExplosion {
                 }
             }
         }
+    }
+
+    public void finalizeExplosion(boolean spawnParticles, boolean playSound, boolean spawnDrops) {
+        playSound(playSound);
+
+        boolean interacts = this.blockInteraction != Explosion.BlockInteraction.KEEP;
+
+        if (this.level.isClientSide) {
+            spawnParticles(spawnParticles, interacts);
+        }
+
+        interact(interacts, spawnDrops);
+
+        onBlocksFinalized(java.util.Collections.unmodifiableList(this.toBlow));
+
+        flames();
     }
 
     private static int rayCount(float radius, float sx, float sy, float sz) {

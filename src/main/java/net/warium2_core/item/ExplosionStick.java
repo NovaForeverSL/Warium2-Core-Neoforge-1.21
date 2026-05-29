@@ -11,12 +11,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import net.warium2_core.lib.explosion.BaseExplosion;
+import net.warium2_core.explosions.ScaledExplosion;
 
 public class ExplosionStick extends Item {
 
     private static final float MIN_RADIUS = 2.0f;
-    private static final float MAX_RADIUS = 15.0f;
+    private static final float MAX_RADIUS = 45.0f;
 
     public ExplosionStick(Properties properties) {
         super(properties);
@@ -46,20 +46,20 @@ public class ExplosionStick extends Item {
         if (!level.isClientSide()) {
             float radius = MIN_RADIUS + level.random.nextFloat() * (MAX_RADIUS - MIN_RADIUS);
 
-            BaseExplosion explosion = new BaseExplosion(
+            ScaledExplosion explosion = new ScaledExplosion(
                     level,
                     player,
                     pos.x, pos.y, pos.z,
                     radius,
                     1.25f,
-                    0.8f,
+                    0.75f,
                     1.25f,
-                    false,
+                    true,
                     Explosion.BlockInteraction.DESTROY
             );
 
             explosion.explode();
-            explosion.finalizeExplosion(false, false, false);
+            explosion.finalizeExplosion(true, true, false);
         }
 
         return InteractionResultHolder.sidedSuccess(player.getItemInHand(hand), level.isClientSide());
