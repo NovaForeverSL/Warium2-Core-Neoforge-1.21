@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "particle": "warium:block/rebar",
+    "pane": "warium:block/rebar",
+    "edge": "warium:block/crossbar"
+  },
+  "render_type": "cutout_mipped"
+}

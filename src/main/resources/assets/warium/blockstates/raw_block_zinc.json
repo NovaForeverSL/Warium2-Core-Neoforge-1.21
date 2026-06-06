@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "warium:block/raw_block_zinc" }
+  }
+}

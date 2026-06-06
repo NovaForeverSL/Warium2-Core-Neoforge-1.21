@@ -1,0 +1,58 @@
+{
+  "explosionlargefar": {
+    "sounds": [
+      {
+        "name": "warium:explosionlargefar",
+        "stream": false
+      }
+    ]
+  },
+  "explosionlarge": {
+    "sounds": [
+      {
+        "name": "warium:explosionlarge",
+        "stream": false
+      }
+    ]
+  },
+  "explosionsmallfar": {
+    "sounds": [
+      {
+        "name": "warium:smallexplosiondistant",
+        "stream": false
+      }
+    ]
+  },
+  "explosionsmall": {
+    "sounds": [
+      {
+        "name": "warium:explosionsmall",
+        "stream": false
+      }
+    ]
+  },
+  "explosionrumble": {
+    "sounds": [
+      {
+        "name": "warium:farblast",
+        "stream": false
+      }
+    ]
+  },
+  "explosioncolossal": {
+    "sounds": [
+      {
+        "name": "warium:colossalexplosion",
+        "stream": false
+      }
+    ]
+  },
+  "explosioncolossalfar": {
+    "sounds": [
+      {
+        "name": "warium:colossalexplosionfar",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "warium2_core:block/block_lead",
-    "particle": "warium2_core:block/block_lead"
-  },
-  "render_type": "solid"
-}

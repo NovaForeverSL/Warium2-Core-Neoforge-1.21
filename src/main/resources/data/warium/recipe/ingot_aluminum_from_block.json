@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "warium:block_aluminum"
+    }
+  ],
+  "result": {
+    "id": "warium:ingot_aluminum",
+    "count": 9
+  }
+}

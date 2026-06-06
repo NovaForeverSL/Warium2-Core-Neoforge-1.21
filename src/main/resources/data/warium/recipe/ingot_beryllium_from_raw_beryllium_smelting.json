@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 1.0,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "warium:raw_beryllium"
+  },
+  "result": {
+    "id": "warium:ingot_beryllium",
+    "count": 1
+  }
+}

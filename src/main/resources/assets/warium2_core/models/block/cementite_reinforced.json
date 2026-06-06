@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "warium2_core:block/cementite",
-    "particle": "warium2_core:block/cementite"
-  },
-  "render_type": "solid"
-}

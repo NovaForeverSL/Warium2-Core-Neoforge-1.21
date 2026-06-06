@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "warium:block/ore_beryllium",
+    "particle": "warium:block/ore_beryllium"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "warium:block/cementite_reinforced_snowy",
+    "bottom": "warium:block/cementite",
+    "top": "minecraft:block/snow",
+    "particle": "warium:block/cementite_reinforced_snowy"
+  },
+  "render_type": "solid"
+}

@@ -69,7 +69,17 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+repositories {
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
 dependencies {
+    dependencies {
+        implementation files("libs/vel-0.5.0.jar")
+    }
 }
 
 var generateModMetadata = tasks.register('generateModMetadata', ProcessResources) {
@@ -82,6 +92,7 @@ var generateModMetadata = tasks.register('generateModMetadata', ProcessResources
             mod_name               : mod_name,
             mod_license            : mod_license,
             mod_version            : mod_version,
+            mod_authors            : mod_authors,
     ]
     inputs.properties replaceProperties
     expand replaceProperties

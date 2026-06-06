@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 1.0,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "warium:raw_lead"
+  },
+  "result": {
+    "id": "warium:ingot_lead",
+    "count": 1
+  }
+}

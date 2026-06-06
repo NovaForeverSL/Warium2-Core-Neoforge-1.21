@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:shapeless",
+  "category": "building",
+  "ingredients": [
+    { "item": "warium:cementite_reinforced" },
+    { "item": "minecraft:vine" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "warium:cementite_overgrown"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "warium:block_steel"
+    }
+  ],
+  "result": {
+    "id": "warium:ingot_steel",
+    "count": 9
+  }
+}

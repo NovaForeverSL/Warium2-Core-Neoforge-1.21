@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "damage=0,snowy=false": { "model": "warium:block/cementite_overgrown" },
+    "damage=0,snowy=true": { "model": "warium:block/cementite_overgrown_snowy" },
+    "damage=1": { "model": "warium:block/cementite_cracked" },
+    "damage=2": { "model": "warium:block/cementite_damaged" },
+    "damage=3": { "model": "warium:block/cementite_fractured" },
+    "damage=4": { "model": "warium:block/cementite_destroyed" }
+  }
+}

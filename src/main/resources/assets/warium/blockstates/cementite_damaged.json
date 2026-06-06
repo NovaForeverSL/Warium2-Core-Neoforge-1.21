@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "warium:block/cementite_damaged" }
+  }
+}

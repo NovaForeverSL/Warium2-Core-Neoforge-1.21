@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "warium:block/cementitestructuraltop",
+    "side": "warium:block/cementitestructuralside"
+  }
+}

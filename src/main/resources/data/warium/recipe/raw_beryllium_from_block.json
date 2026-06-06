@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "warium:raw_block_beryllium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "warium:raw_beryllium"
+  }
+}
