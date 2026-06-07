@@ -456,7 +456,6 @@ public class BaseExplosion {
     }
 
     public void finalizeExplosion(boolean spawnParticles, boolean playSound, boolean spawnDrops) {
-        playSound(playSound);
 
         boolean interacts = this.blockInteraction != Explosion.BlockInteraction.KEEP;
 
@@ -464,6 +463,8 @@ public class BaseExplosion {
             spawnParticles(spawnParticles, interacts);
         }
         else {
+            playSound(playSound);
+
             interact(interacts, spawnDrops);
 
             onBlocksFinalized(java.util.Collections.unmodifiableList(this.toBlow));

@@ -43,7 +43,7 @@ public class ExplosionStick extends Item {
 
         Vec3 pos = hit.getLocation();
 
-        float radius = MIN_RADIUS + level.random.nextFloat() * (MAX_RADIUS - MIN_RADIUS);
+        float radius = 18; //MIN_RADIUS + level.random.nextFloat() * (MAX_RADIUS - MIN_RADIUS);
 
         ScaledExplosion explosion = new ScaledExplosion(
                 level, player,
