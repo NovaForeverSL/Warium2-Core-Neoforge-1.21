@@ -31,6 +31,8 @@
     "warium:rebar",
     "warium:cementite_structural",
     "warium:block_steel",
-    "warium:block_aluminum"
+    "warium:block_aluminum",
+    "warium:plating_steel",
+    "warium:plating_aluminum"
   ]
 }

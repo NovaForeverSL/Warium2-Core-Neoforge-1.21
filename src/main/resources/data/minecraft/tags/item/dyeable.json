@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "warium:paint_gun"
+    "#warium:paintable"
   ]
 }

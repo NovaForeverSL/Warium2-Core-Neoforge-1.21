@@ -8,8 +8,7 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.PushReaction;
-import net.warium.block.custom.DamageableCementiteBlock;
-import net.warium.block.custom.PaintableMetalBlock;
+import net.warium.block.custom.*;
 import net.warium.fluid.ModFluids;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -45,16 +44,20 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> BLOCK_STEEL = registerSimpleBlock("block_steel", Blocks.IRON_BLOCK);
     public static final DeferredBlock<Block> BLOCK_ALUMINUM = registerSimpleBlock("block_aluminum", Blocks.IRON_BLOCK);
 
-    public static final DeferredBlock<PaintableMetalBlock> PLATING_STEEL = BLOCKS.registerBlock(
-            "plating_steel",
-            PaintableMetalBlock::new,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
+    public static final DeferredBlock<PaintableBlock> PLATING_STEEL = BLOCKS.register(
+        "plating_steel",
+        () -> new PaintableBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops(),
+            PaintableBlock.STEEL_COLOR
+        )
     );
 
-    public static final DeferredBlock<PaintableMetalBlock> PLATING_ALUMINUM = BLOCKS.registerBlock(
-            "plating_aluminum",
-            PaintableMetalBlock::new,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
+    public static final DeferredBlock<PaintableBlock> PLATING_ALUMINUM = BLOCKS.register(
+        "plating_aluminum",
+        () -> new PaintableBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops(),
+            PaintableBlock.ALUMINUM_COLOR
+        )
     );
 
     public static final DeferredBlock<Block> BAUXITE = registerSimpleBlock("bauxite", Blocks.IRON_ORE);
@@ -67,30 +70,30 @@ public final class ModBlocks {
     public static final DeferredBlock<LiquidBlock> SULFURIC_ACID = registerFluidBlock("sulfuric_acid", ModFluids.SULFURIC_ACID);
 
     public static final DeferredBlock<DamageableCementiteBlock> CEMENTITE_REINFORCED = BLOCKS.registerBlock(
-            "cementite_reinforced",
-            DamageableCementiteBlock::new,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(4.0F, 12.0F)
+        "cementite_reinforced",
+        DamageableCementiteBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(4.0F, 12.0F)
                     .requiresCorrectToolForDrops()
     );
     public static final DeferredBlock<DamageableCementiteBlock> CEMENTITE_OVERGROWN = BLOCKS.registerBlock(
-            "cementite_overgrown",
-            DamageableCementiteBlock::new,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(4.0F, 12.0F)
+        "cementite_overgrown",
+        DamageableCementiteBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(4.0F, 12.0F)
                     .requiresCorrectToolForDrops()
     );
 
      public static final DeferredBlock<DamageableCementiteBlock> CEMENTITE_STRUCTURAL = BLOCKS.registerBlock(
-            "cementite_structural",
-            DamageableCementiteBlock::new,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(60.0F, 42.0F)
-                    .requiresCorrectToolForDrops()
+        "cementite_structural",
+        DamageableCementiteBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(60.0F, 42.0F)
+            .requiresCorrectToolForDrops()
     );
 
     public static final DeferredBlock<IronBarsBlock> REBAR = BLOCKS.registerBlock(
-            "rebar",
-            IronBarsBlock::new,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BARS).noOcclusion()
-                    .requiresCorrectToolForDrops()
+        "rebar",
+        IronBarsBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BARS).noOcclusion()
+                .requiresCorrectToolForDrops()
     );
 
     private ModBlocks() {
@@ -98,22 +101,22 @@ public final class ModBlocks {
 
     private static DeferredBlock<LiquidBlock> registerFluidBlock(final String name, final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.level.material.Fluid, net.minecraft.world.level.material.Fluid> fluid) {
         return BLOCKS.registerBlock(
-                name,
-                properties -> new LiquidBlock((FlowingFluid) fluid.get(), properties),
-                BlockBehaviour.Properties.of()
-                        .replaceable()
-                        .noCollission()
-                        .strength(100.0F)
-                        .pushReaction(PushReaction.DESTROY)
-                        .noLootTable()
-                        .liquid()
+            name,
+            properties -> new LiquidBlock((FlowingFluid) fluid.get(), properties),
+            BlockBehaviour.Properties.of()
+                    .replaceable()
+                    .noCollission()
+                    .strength(100.0F)
+                    .pushReaction(PushReaction.DESTROY)
+                    .noLootTable()
+                    .liquid()
         );
     }
 
     private static DeferredBlock<Block> registerSimpleBlock(final String name, final Block template) {
         return BLOCKS.registerSimpleBlock(
-                name,
-                BlockBehaviour.Properties.ofFullCopy(template).requiresCorrectToolForDrops()
+            name,
+            BlockBehaviour.Properties.ofFullCopy(template).requiresCorrectToolForDrops()
         );
     }
 

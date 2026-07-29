@@ -5,6 +5,7 @@ import net.warium.block.ModBlocks;
 import net.warium.item.ModItems;
 import net.warium.fluid.ModFluids;
 import net.warium.block.entity.ModBlockEntities;
+import net.minecraft.core.cauldron.CauldronInteraction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -16,6 +17,9 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.warium.registry.WariumParticles;
 import net.warium.registry.WariumSoundEvents;
+
+import java.util.stream.Stream;
+
 import org.slf4j.Logger;
 
 @Mod(Warium.MODID)
@@ -47,6 +51,13 @@ public class Warium {
         }
 
         Config.ITEM_STRINGS.get().forEach(item -> LOGGER.info("ITEM >> {}", item));
+        var cauldron = CauldronInteraction.WATER.map();
+        Stream.of(ModItems.PAINT_GUN, ModItems.PLATING_ALUMINUM, ModItems.PLATING_STEEL).forEach(e ->
+            cauldron.put(
+                e.get(),
+                CauldronInteraction.DYED_ITEM
+            )
+        );
     }
 
     @SubscribeEvent

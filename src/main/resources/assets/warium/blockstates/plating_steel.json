@@ -1,7 +1,9 @@
 {
-  "variants": {
-    "": {
-      "model": "warium:block/plating_steel"
+  "multipart": [
+    {
+      "apply": {
+        "model": "warium:block/plating_steel"
+      }
     }
-  }
+  ]
 }

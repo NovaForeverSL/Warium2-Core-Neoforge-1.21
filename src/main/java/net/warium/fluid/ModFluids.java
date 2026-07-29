@@ -105,7 +105,7 @@ public final class ModFluids {
         FLUIDS.register(eventBus);
     }
 
-    @EventBusSubscriber(modid = Warium.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = Warium.MODID, value = Dist.CLIENT)
     public static final class ClientExtensions {
         private ClientExtensions() {
         }

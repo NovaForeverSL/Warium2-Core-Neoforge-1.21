@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "warium:paint_gun",
+    "warium:plating_steel",
+    "warium:plating_aluminum"
+  ]
+}

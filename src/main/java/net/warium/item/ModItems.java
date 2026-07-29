@@ -30,7 +30,7 @@ public final class ModItems {
 
     public static final DeferredItem<Item> INGOT_STEEL = ITEMS.registerSimpleItem("ingot_steel", new Item.Properties());
     public static final DeferredItem<Item> INGOT_ALUMINUM = ITEMS.registerSimpleItem("ingot_aluminum", new Item.Properties());
-    public static final DeferredItem<Item> PAINT_GUN = ITEMS.registerSimpleItem("paint_gun", new Item.Properties().stacksTo(1));
+    public static final DeferredItem<Item> PAINT_GUN = ITEMS.register("paint_gun", PaintGun::new);
 
     public static final DeferredItem<BlockItem> ORE_BERYLLIUM = registerBlockItem("ore_beryllium", ModBlocks.ORE_BERYLLIUM);
     public static final DeferredItem<BlockItem> ORE_BERYLLIUM_DEEPSLATE = registerBlockItem("ore_beryllium_deepslate", ModBlocks.ORE_BERYLLIUM_DEEPSLATE);

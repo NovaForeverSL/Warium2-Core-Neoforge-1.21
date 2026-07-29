@@ -1,7 +1,9 @@
 {
-  "variants": {
-    "": {
-      "model": "warium:block/plating_aluminum"
+  "multipart": [
+    {
+      "apply": {
+        "model": "warium:block/plating_aluminum"
+      }
     }
-  }
+  ]
 }

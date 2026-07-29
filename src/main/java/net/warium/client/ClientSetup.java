@@ -8,7 +8,7 @@ import net.warium.Warium;
 import net.warium.particles.ScaledExplosionParticles;
 import net.warium.registry.WariumParticles;
 
-@EventBusSubscriber(modid = Warium.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = Warium.MODID, value = Dist.CLIENT)
 public class ClientSetup {
     @SubscribeEvent
     public static void registerParticleProviders(RegisterParticleProvidersEvent event) {
